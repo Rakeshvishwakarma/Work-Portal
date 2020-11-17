@@ -1,0 +1,85 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 9 Nov, 2019, 8:58:17 AM
+    Author     : lenovo
+*/
+
+*{
+margin:0;
+padding:0;
+font-family:monospace;
+}
+header
+{
+background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("5.jpg");
+height:100vh;
+font-size: 200%;
+background-size:cover;
+background-position:center;
+}
+.main h1{
+    color: #000;
+    font-size: 80px; 
+    position: absolute;
+top: 30%;
+left:28%;
+transform:translate(-50%,-50%);
+    
+}
+.main h1 input{
+    color:blue;
+ font-size:60px;
+top: 50%;
+left: 178%;
+position: absolute;  
+transform:translate(-50%,-50%);
+}
+.main h2{
+    color: #000;
+    font-size: 70px;
+     position: absolute;
+top:43%;
+left:29%;
+transform:translate(-50%,-50%);
+  
+}
+.main h2 input{
+    color:blue;
+ font-size:60px;
+top: 70%;
+left: 190%;
+position: absolute;  
+transform:translate(-50%,-50%);
+}
+.main h4 a{
+position:absolute;
+top:75%;
+left:33%;
+font-size:60px;
+color:  blue;
+transform:translate(-50%,-50%);
+}
+.main h5 a{
+  position: absolute;
+top: 75%;
+left: 63%;
+color: blue;
+font-size: 60px;
+transform: translate(-50%,-50%);
+}
+.main h3 input{
+position:absolute;
+top:60%;
+left:45%;
+font-size:60px;
+transform:translate(-50%,-50%);
+}
+#bt2{
+    background-color:red;
+    border-radius: 15px;
+
+}

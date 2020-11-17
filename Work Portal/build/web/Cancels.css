@@ -1,0 +1,88 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10 Feb, 2020, 11:16:00 PM
+    Author     : lenovo
+*/
+
+*{
+margin:0;
+padding:0;
+font-family:Century Gothic;
+}
+header
+{
+background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("8.jpg");
+height:100vh;
+font-size: 200%;
+background-size:cover;
+background-position:center;
+}
+.main h1{
+     
+    color:red;
+    font-size: 65px; 
+    font-family:sans-serif;
+    position: absolute;
+    font-family: monospace;
+    
+top: 40%;
+width:60%;
+margin-left: 20%;
+font-style:inherit;   
+
+    
+}
+.main h1 input{
+    
+   color:red;
+    font-size: 65px; 
+    font-family:sans-serif;
+    position: absolute;
+    font-family: monospace;
+    
+top: 10%;
+width:30%;
+margin-left: 1%;
+font-style:inherit;   
+background-color:blue;
+    border-radius: 15px;
+
+ 
+}
+.main h2 input{
+    
+   color:red;
+    font-size: 70px; 
+    font-family:sans-serif;
+    position: absolute;
+    font-family: monospace;
+    
+top: 60%;
+width:10%;
+margin-left: 40%;
+font-style:inherit;   
+  background-color:blue;
+    border-radius: 15px;
+
+    
+}
+.main h3 input{
+   color:red;
+    font-size: 70px; 
+    font-family:sans-serif;
+    position: absolute;
+    font-family: monospace;
+    
+top: 60%;
+width:10%;
+margin-left: 60%;
+font-style:inherit;   
+  background-color:blue;
+    border-radius: 15px;
+ 
+    
+}

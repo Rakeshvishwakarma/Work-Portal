@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Forget Password Contractor</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="ForCon.css"/>
+        <script type="text/javascript">
+            function ch(){
+                str=f2.Email.value;
+                if(str.length===0){
+                   alert("Email Id can't be empty");
+                   f2.name.focus();
+                }
+            }
+            function empty(){
+                var x;
+                x=f2.Email.value;
+                if(x===""){
+                    alert("Enter the valid details");
+                    
+                    return false;
+                }
+            }
+            </script>
+    </head>
+    <body>
+         <header>
+            <marquee direction="left"><h1 style="color: aqua"></h1></marquee>
+                       <div class="main">
+                
+                <form name="f2" method="post" action="ForCon.jsp">
+                    <u>Forget Password ???</u><br>
+                    <br><h1>Email Id:-<input type="email" name="Email" onblur="ch()" class="form-control" title="Like ABC@gmail.com" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"><br></h1>
+     
+                    <br><h2><input type="submit" name="Submit" value="Get Password" onClick="return empty()"></h2>
+                </form>
+                       </div>
+            <div class="main3">
+            <form name="f3" method="post" action="update.html">
+                           
+                    <br><h3><input type="submit" name="Submit" value="Update Password"></h3>      
+                    <a href="home.html" id="bt1" style="font-size: 50px; color: brown; border-radius: 50px;">Home</a>
+                    
+                </form>
+                       </div>
+                    </header>
+    </body>
+</html>
