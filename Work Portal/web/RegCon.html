@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Register Contractor</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="RegCon.css"/>
+        <script type="text/javascript">
+            function ch(){
+                str=f2.Name.value;
+                if(str.length===0){
+                   alert("Name can't be empty");
+                   f2.name.focus();
+                }
+            } function ch1(){
+                str=f2.Email.value;
+                if(str.length===0){
+                   alert("Email can't be empty");
+                   f2.name.focus();
+                }
+            } function ch2(){
+                str=f2.Create_P.value;
+                if(str.length===0){
+                   alert("Password can't be empty");
+                   f2.name.focus();
+                }
+            } function ch3(){
+                str=f2.Country.value;
+                if(str.length===0){
+                   alert("State can't be empty");
+                   f2.name.focus();
+                }
+            } function ch4(){
+                str=f2.State.value;
+                if(str.length===0){
+                   alert("Landmark can't be empty");
+                   f2.name.focus();
+                }
+            } function ch5(){
+                str=f2.Phone_N.value;
+                if(str.length===0){
+                   alert("Phone number can't be empty");
+                   f2.name.focus();
+                }
+            }
+             function empty(){
+                var x,x1,x2,x3,x4,x5;
+                x=f2.Name.value;
+                x1=f2.Email.value;
+                x2=f2.Create_P.value;
+                x3=f2.State.value;
+                x4=f2.Landmark.value;
+                x5=f2.Phone_N.value;
+                if(x===""){
+                    alert("Enter the valid Name");
+                    return false;
+                }
+                if(x1===""){
+                    alert("Enter the valid Email Id");
+                    return false;
+                }if(x2===""){
+                    alert("Enter the valid Password");
+                    return false;
+                }if(x3===""){
+                    alert("Enter the valid State");
+                    return false;
+                }if(x4===""){
+                    alert("Enter the valid Landmark");
+                    return false;
+                }if(x5===""){
+                    alert("Enter the valid Phone Number");
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <marquee direction="left"><h1 style="color: aqua"></h1></marquee>
+                       <div class="main">
+                
+                <form name="f2" method="post" action="RegCon.jsp">
+                    <u>Registration Form</u><br>
+                    <br><h1>Name:-<input type="text" name="Name" onblur="ch()" class="form-control" title="Like abc" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$"><br></h1>
+                    <br><h2> Email Id:-<input type="email" name="Email" onblur="ch1()" class="form-control" title="Like ABC@gmail.com" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"><br></h2>
+                    <h3>Set Password:-<input type="password" name="Create_P" onblur="ch2()"><br></h3>
+                    <h4>State:-<input type="text" name="State" onblur="ch3()"><br></h4>
+                    <h5>Landmark:-<input type="text" name="Landmark" onblur="ch4()"><br></h5>
+                    <h6>Mobile No.:-<input type="text" name="Phone_N" onblur="ch5()" pattern="[6-9]{1}[0-9]{9}" title="Phone number with 7-9 and remaining 9 digit with 0-9"><br></h6>
+                   <a><input type="submit" value="Submit" onclick="return empty()" ></a>
+                    <b><input type="reset" value="Reset" onclick="reset"></b>
+                     
+                </form>
+            </div>
+        </header>
+    </body>
+</html>

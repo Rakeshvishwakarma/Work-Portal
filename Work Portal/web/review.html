@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Review The Portal</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="review.css"/>
+        <script type="text/javascript">
+            function ch(){
+                str=f2.id.value;
+                if(str.length===0){
+                   alert("ContactId can't be empty");
+                   f2.name.focus();
+                }
+            }
+            function ch1(){
+                str=f2.name.value;
+                if(str.length===0){
+                   alert("Name can't be empty");
+                   f2.name.focus();
+                }
+            }
+            function ch2(){
+                str=f2.Num.value;
+                if(str.length===0){
+                   alert("Phone Number can't be empty");
+                   f2.name.focus();
+                }
+            }
+            
+            function empty(){
+                var x,x1,x2;
+                x=f2.id.value;
+                x1=f2.name.value;
+                x2=f2.Num.value;
+                if(x===""){
+                    alert("Enter the valid details for Id");
+                    
+                    return false;
+                }
+                if(x1===""){
+                    alert("Enter the valid details for Name");
+                    
+                    return false;
+                }
+                if(x2===""){
+                    alert("Enter the valid details Phone Number");
+                    
+                    return false;
+                }
+            }
+        </script>
+       
+    </head>
+    <body>
+        <header>
+            <marquee direction="left"><h1 style="color: activecaption"></h1></marquee>
+            <div class="main">
+                <form name="f2" method="post" action="review.jsp">
+                    <h1> Enter WOrker/Contractor Id :-<input type="text" name="id" onblur="ch()"></h1>
+                    <h2> Enter you Name:-<input type="text" name="name" onblur="ch1()" class="form-control" title="Write name Like ABC" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$"></h2>
+                    <h3>Enter your Contact number :-<input type="text" name="Num" onblur="ch2()" pattern="[6-9]{1}[0-9]{9}" title="Phone number with 6-9 and remaining 9 digit with 0-9"></h3>
+                    <h4><input type="submit" name="submit" value="Submit" onclick="return empty()"></h4>
+                    <h5><input type="reset" name="reset" value="Reset"></h5>
+                </form>
+            </div>
+        </header>
+    </body>
+</html>

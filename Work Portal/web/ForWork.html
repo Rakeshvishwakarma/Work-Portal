@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Forget Password Worker</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="ForWork.css"/>
+        <script type="text/javascript">
+            function ch(){
+                str=f2.Phone_N.value;
+                if(str.length===0){
+                   alert("Phone Number can't be empty");
+                   f2.name.focus();
+                }
+            }
+             function empty(){
+                var x;
+                x=f2.Phone_N.value;
+                if(x===""){
+                    alert("Enter the valid details");
+                    
+                    return false;
+                }
+            }
+            </script>
+    </head>
+    <body>
+         <header>
+            <marquee direction="left"><h1 style="color: aqua"></h1></marquee>
+                       <div class="main">
+                
+                <form name="f2" method="post" action="ForWork.jsp">
+                    <u>Forget Password ???</u><br>
+                    <br><h1>Phone Number:-<input type="text" name="Phone_N" onblur="ch()" pattern="[7-9]{1}[0-9]{9}" title="Phone number with 7-9 and remaining 9 digit with 0-9"></h1>
+                    <br><h2><input type="submit" name="Submit" value="Get Password" onClick="return empty()"></h2>
+                              <a href="home.html" id="bt1" style="font-size: 50px; color: brown; border-radius: 50px;">Home</a>
+                         
+                </form>
+                       </div>
+                    </header>
+    </body>
+</html>

@@ -1,0 +1,104 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 5 Nov, 2019, 10:01:20 PM
+    Author     : lenovo
+*/
+
+*{
+margin:0;
+padding:0;
+font-family:inherit;
+}
+header
+{
+background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("first1.jpg");
+height:100vh;
+background-size:cover;
+background-position:center;
+}
+ul{
+float:right;
+list-style-type:none;
+margin-top:60px;
+margin-right: 15px
+}
+ul li{
+display:inline-block;
+}
+ul li a{
+text-decoration:none;
+font-size: 30px;
+color:#fff;
+padding:5px 20px;
+border:5px solid transparent;
+transition:0.6s ease;
+}
+ul li a:hover{
+background-color:#fff;
+color:#000;
+}
+.logo img{
+float: left;
+width:250px;
+height:250px;
+margin-left: 50px;
+}
+ul li.active a{
+background-color:#fff;
+color:#000;
+}
+.main{
+max-width:2400px;
+margin:auto;
+}
+.title{
+position:absolute;
+top:80%;
+left:50%;
+transform:translate(-50%,-50%);
+
+}
+.title h1{
+color:darkred;
+font-size:120px;
+font-family: Times New Roman Georgia;
+}
+.button{
+position:absolute;
+top:90%;
+left:50%;
+transform:translate(-50%,-50%);
+}
+.btn{
+border:1px solid #fff;
+padding:10px 30px;
+color:blue;
+font-size: 60px;
+text-decoration:none;
+background-color:red;
+    border-radius: 15px;
+}
+.btn:hover{
+background-color:#fff;
+color:#000;
+}
+.btn1{
+border:1px solid #fff;
+padding:10px 30px;
+color:brown;
+font-size: 60px;
+text-decoration:none;
+background-color:chartreuse;
+    border-radius: 15px;
+
+}
+.btn1:hover{
+background-color:#fff;
+color:#000;
+font-family: cursive;
+}
+

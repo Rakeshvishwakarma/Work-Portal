@@ -1,0 +1,54 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 9 Nov, 2019, 8:38:13 AM
+    Author     : lenovo
+*/
+
+*{
+margin:0;
+padding:0;
+font-family:Century Gothic;
+}
+header
+{
+background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,1)),url("first.jpg");
+height:100vh;
+font-size: 200%;
+background-size:cover;
+background-position:center;
+}
+.main1 h1 u{
+    color: cyan;
+    font-family:cursive;
+    font-size: 60px; 
+    position: absolute;
+top: 6%;
+width:100%;
+text-align: center;
+    
+}
+.main h3{
+color:#bbb;
+font-size:50px;
+
+}
+.main2 h3{
+    position: absolute;
+    bottom: 100px;
+    right: 200px;
+    font-family: sans-serif;
+    font-size: 45px;
+    color:crimson;
+}
+.main2 h1{
+    position: absolute;
+    bottom: 15px;
+    right: 50px;
+    font-size: 60px;
+    font-family: sans-serif;
+    color:crimson;
+}

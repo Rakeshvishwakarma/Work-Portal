@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Contractor Registration</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="contrator.css"/>
+         <script type="text/javascript">
+            function ch(){
+                str=f1.Email.value;
+                if(str.length===0){
+                   alert("Email Id can't be empty");
+                   f1.name.focus();
+                }
+            }
+            function ch2(){
+                str=f1.Create_P.value;
+                if(str.length===0){
+                   alert("Password can't be empty");
+                   f1.name.focus();
+                }
+            } 
+            function empty(){
+                var x,x1;
+                x=f1.Email.value;
+                x1=f1.Create_P.value;
+                if(x===""){
+                    alert("Enter the valid details for Email Id");
+                    return false;
+                }
+                 if(x1===""){
+                    alert("Enter the valid details for Password");
+                    return false;
+                }
+            }
+        </script>
+    
+    </head>
+    <body>
+        <header>
+          <marquee direction="left"><h1 style="color:"></h1>hii</marquee>
+            <div class="main">
+                <form name="f1" method="post" action="contrator.jsp">
+                    <h1>Email Id:-<input type="text" name="Email" onblur="ch()" ><br></h1>
+                    <h2>Password:-<input type="password" name="Create_P" onblur="ch2()"><br></h2>
+                    <h3><input type="submit" value="Submit" id="bt2" onClick="return empty()"/><br></h3>
+                    <h4><a href="RegCon.html" >Register Now</h4>
+                    <h5><a href="ForCon.html">Forgot Password ??</h5>
+                    <a href="home.html" id="bt1" style="font-size: 50px; color: brown; border-radius: 50px;">Home</a>
+                    
+                </form>
+
+            </div>
+        </header>
+    </body>
+</html>
+

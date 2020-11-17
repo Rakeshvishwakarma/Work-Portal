@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Hiring Processing is in Progress</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="hire.css"/>
+        
+    </head>
+    <body>
+        <header>
+            <marquee direction="left"><h1 style="color: activecaption"></h1></marquee>
+        <div class="main">
+                <form name="f1" method="post" action="hire.jsp">
+                    <br><h1> <u>  <b>  Worker Types </b></u>  </h1><br><br>
+                            <div class="main1"><h1>
+                       Kind Of Works:-
+                        </h1>
+                           <select name="worker" onclick="selectw()">
+                           <option value="0">Select Your Types</option>
+                           <option value="Carpenter">Carpenter</option>
+                           <option value="Painter">Painter</option>
+                           <option value="Building Maker">Building Maker</option>
+                           <option value="Welding man">Welding man</option>
+                           <option value="Electrician">Electrician</option>
+                           <option value="Plumber">Plumber</option>
+                           <option value="Catering">Catering</option>
+                           <option value="Loading & Unloading">Loading & Unloading</option>
+                       </select>
+                            </div>
+                    <div class="main2" id="type">
+                        <h1> Types of Works:-</h1>
+                        <select name="Type">
+                            <option value="0">Select Your Types</option>
+                            <option value="Designer">Designer</option>
+                            <option value="Plywood Worker">Plywood Worker</option>
+                            <option value="Mica Worker">Mica Worker </option>
+                            <option value="Wood Worker">Wood Worker</option>
+                            <option value="Laboure">Laboure</option>
+                            <option value="Texture">Texture</option>
+                            <option value="white putty Worker">white putty Worker</option>
+                            <option value="Painting Only">Painting Only</option>
+                            <option value="Tiles Worker">Tiles Worker</option>
+                            <option value="Kitchen Worker">Kitchen Worker</option>
+                            <option value="Bathroom Worker">Bathroom Worker </option>
+                            <option value="Building Worker">Building Worker</option>
+                            <option value="X-ray welding">X-ray welding</option>
+                            <option value="Normal Welding">Normal Welding</option>
+                            <option value="Make HouseHolds">Make HouseHolds </option>
+                            <option value="Design the Path">Design the Path</option>
+                            <option value="HouseHold Worker">HouseHold Worker</option>
+                            <option value="Industrialist worker">Industrialist worker</option>
+                            <option value="Bathroom Plumbing">Bathroom Plumbing</option>
+                            <option value="Washroom Plumbing">Washroom Plumbing</option>
+                            <option value="Other Plumbing">Other Plumbing</option>
+                            <option value="Waiter">Waiter</option>
+                            <option value="Cook">Cook</option>
+                            <option value="Receipy maker">Receipy maker</option>
+                            <option value="Heavy Weight Shifting">Heavy Weight Shifting</option>
+                            <option value="Light Weight Shifting">Light Weight Shifting</option>
+                            <option value="Shifting HouseHolds">Shifting HouseHolds </option>
+                            
+                        </select>
+                    </div>
+                        
+                    <div class="main3">
+                        <h1>Experience:-<input type="text" name="Exp" onblur="ch()" /></h1>
+                        <h2>Work Timing:-</h2>
+                        <select name="time">
+                            <option value="0">Choose Work Timing</option>
+                            <option value="Day">DAY</option>
+                            <option value="NIGHT">NIGHT</option>
+                            <option value="DAY & NIGHT">DAY & NIGHT</option>
+                        </select>
+                    </div>
+                
+                    <div class="main4">
+                        
+                        <input value="Hire" type="submit" name="exp" onclick="submit"/>
+                    </div>
+                        <div class="ma">
+                        <input type="reset" value="Reset" onclick="reset"/>
+                    </div>
+                    <div class="avail">
+                        <a href="avail.html">Availability</a>
+                    </div>
+                        <a href="home.html" id="bt1" style="font-size: 50px; color: brown; border-radius: 50px;">Home</a>
+                    
+                    
+                </form>
+        </div>
+        </header>
+    </body>
+</html>

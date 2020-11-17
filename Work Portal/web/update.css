@@ -1,0 +1,102 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12 Feb, 2020, 4:50:30 PM
+    Author     : lenovo
+*/
+
+*{
+margin:0;
+padding:0;
+font-family:monospace;
+}
+header
+{
+background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("10.png");
+height:100vh;
+font-size: 200%;
+background-size:cover;
+background-position:center;
+}
+.main h1{
+    color: #000;
+    font-size: 80px; 
+    position: absolute;
+top: 30%;
+margin-left: 35%;
+transform:translate(-50%,-50%);
+color: red; 
+font-family: sans-serif;
+
+}
+.main h1 input{
+    color: #000;
+    font-size: 80px; 
+    position: absolute;
+top: 52%;
+margin-left: 15%;
+width: 30%;
+transform:translate(-50%,-50%);
+color: red; 
+height:55%;
+font-family: sans-serif;
+}
+.main h2{
+    color: #000;
+    font-size: 80px; 
+    position: absolute;
+top: 40%;
+margin-left: 39%;
+transform:translate(-50%,-50%);
+color: red; 
+font-family: sans-serif;
+}
+.main h2 input{
+    color: #000;
+    font-size: 80px; 
+    position: absolute;
+top: 50%;
+margin-left: 18%;
+width: 35%;
+transform:translate(-50%,-50%);
+color: red; 
+height:55%;
+font-family: sans-serif;
+}
+.main h3{
+    color: #000;
+    font-size: 80px; 
+    position: absolute;
+top: 50%;
+margin-left: 37%;
+transform:translate(-50%,-50%);
+color: red; 
+font-family: sans-serif;
+}
+.main h3 input{
+    color: #000;
+    font-size: 80px; 
+    position: absolute;
+top: 50%;
+margin-left: 16%;
+height:55%;
+width: 32%;
+transform:translate(-50%,-50%);
+color: red; 
+font-family: sans-serif;
+}
+
+.main h4 input{
+    color: #000;
+    font-size: 60px; 
+    position: absolute;
+top: 65%;
+margin-left: 50%;
+width: 15%;
+transform:translate(-50%,-50%);
+color: red; 
+font-family: sans-serif;
+}

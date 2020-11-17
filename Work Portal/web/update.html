@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Update YourSelf</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="update.css"/>
+      <script type="text/javascript">
+            function ch(){
+                str=f1.pass.value;
+                if(str.length===0){
+                   alert("Password can't be empty");
+                   f1.name.focus();
+                }
+            }
+            function ch1(){
+                str=f1.Npass.value;
+                if(str.length===0){
+                   alert("New Password can't be empty");
+                   f1.name.focus();
+                }
+            }
+            function ch2(){
+                str=f1.RNpass.value;
+                if(str.length===0){
+                   alert("New Password can't be empty");
+                   f1.name.focus();
+                }
+            }
+            function empty(){
+                var x,x1,x2;
+                x=f1.pass.value;
+                x1=f1.Npass.value;
+                x2=f1.RNpass.value;
+                if(x===""){
+                    alert("Enter the valid details for Password");
+                    
+                    return false;
+                }
+                if(x1===""){
+                    alert("Enter the valid details for New Password");
+                    return false;
+                }
+                if(x2===""){
+                    alert("Enter the valid details for New password Redial");
+                    return false;
+                }
+                if(x1!==x2){
+                    alert("Enter the Valid New Password");
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <marquee direction="left"><h1 style="color:aqua"></h1></marquee>
+            <div class="main">
+                <form name="f1" method="post" action="update.jsp">
+                    <h1>Enter the Previous Password :-<input type="password" name="pass" onblur="ch()"></h1>
+                    <h2>Enter the new Password :-<input type="password" name="Npass" onblur="ch1()"></h2>
+                    <h3>ReEnter the new Password :-<input type="password" name="RNpass" onblur="ch2()"></h3>
+                    <h4><input type="submit" name="submit" value="update" onclick="return empty()"></h4>
+                    <h6><a href="worker.html" id="bt1" style="font-size: 50px; color: red;">LogOut</h6>
+                    
+                </form>
+            </div>
+                    </header>
+    </body>
+</html>
